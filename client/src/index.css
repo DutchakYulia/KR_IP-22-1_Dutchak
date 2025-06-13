@@ -1,0 +1,147 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --color-dark-3xl: rgba(41, 41, 41, 1);
+  --color-dark-l: rgba(84, 84, 84, 1);
+  --color-dark-m: rgba(178, 178, 178, 1);
+  --color-dark-s: rgba(205, 205, 205, 1);
+  --color-dark-xl: rgba(76, 76, 76, 1);
+  --color-light-l: rgba(246, 246, 246, 1);
+  --color-light-s: rgba(250, 250, 250, 1);
+  --color-light-xl: rgba(255, 255, 255, 1);
+  --color-primary: rgba(241, 205, 179, 1);
+  --footer-gradient-background: rgba(33, 31, 32, 1);
+  --h-2-font-family: "Georgia", Helvetica;
+  --h-2-font-size: 44px;
+  --h-2-font-style: normal;
+  --h-2-font-weight: 400;
+  --h-2-letter-spacing: 0px;
+  --h-2-line-height: 130%;
+  --h-3-font-family: "Georgia", Helvetica;
+  --h-3-font-size: 35px;
+  --h-3-font-style: normal;
+  --h-3-font-weight: 400;
+  --h-3-letter-spacing: 2.1px;
+  --h-3-line-height: 130%;
+  --h-4-font-family: "Georgia", Helvetica;
+  --h-4-font-size: 20px;
+  --h-4-font-style: normal;
+  --h-4-font-weight: 400;
+  --h-4-letter-spacing: 1.2px;
+  --h-4-line-height: 115%;
+  --h-5-font-family: "Georgia", Helvetica;
+  --h-5-font-size: 15px;
+  --h-5-font-style: normal;
+  --h-5-font-weight: 400;
+  --h-5-letter-spacing: 0.8999999999999999px;
+  --h-5-line-height: 110%;
+  --logo-subtitle-font-family: "Arial", Helvetica;
+  --logo-subtitle-font-size: 13px;
+  --logo-subtitle-font-style: normal;
+  --logo-subtitle-font-weight: 400;
+  --logo-subtitle-letter-spacing: 1.3px;
+  --logo-subtitle-line-height: normal;
+  --logo-title-font-family: "Georgia", Helvetica;
+  --logo-title-font-size: 32px;
+  --logo-title-font-style: normal;
+  --logo-title-font-weight: 400;
+  --logo-title-letter-spacing: 1.92px;
+  --logo-title-line-height: 110%;
+  --paragraph-l-font-family: "Arial", Helvetica;
+  --paragraph-l-font-size: 15px;
+  --paragraph-l-font-style: normal;
+  --paragraph-l-font-weight: 400;
+  --paragraph-l-letter-spacing: 0px;
+  --paragraph-l-line-height: 160%;
+  --start-screen-gradient-background: rgba(33, 31, 32, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
